@@ -23,7 +23,7 @@ const moviesAPIController = {
                     total: movies.length,
                     url: 'api/movies'
                 },
-                data: movies
+                movies: movies
             }
                 res.json(respuesta);
             })

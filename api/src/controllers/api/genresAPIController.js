@@ -22,7 +22,7 @@ const genresAPIController = {
                     total: genres.length,
                     url: 'api/genres'
                 },
-                data: genres
+                genres: genres
             }
                 res.json(respuesta);
             })

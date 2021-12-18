@@ -2,7 +2,10 @@ const express = require('express');
 const path = require('path');
 const methodOverride = require('method-override');
 const app = express();
-
+const cors = require('cors')
+// cors = control de acceso / control de seguridad 
+// salteamos esa medidad de seguridad
+app.use(cors())
 
 //Ejecuto el llamado a mis rutas
 const indexRouter = require('./routes/index');
