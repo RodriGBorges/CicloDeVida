@@ -32,12 +32,6 @@ class Movie extends React.Component {
 				<div className="card-body">
 					<div className="table-responsive">
 
-						{this.state.movies !== '' ? this.state.movies.localeCompare(movie => <h1>{movie.title}</h1>)
-						: <h1>Cargando..</h1>
-						}
-
-
-
 						<table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
 							<thead>
 								<tr>
@@ -65,13 +59,14 @@ class Movie extends React.Component {
 									key={movie.id}
 									id={movie.id}
 									title={movie.title}
-									calificacion={movie.calificacion}
-									premios={movie.premios}
-									duracion={movie.duracion}
+									calificacion={movie.rating}
+									premios={movie.awards}
+									duracion={movie.length}
 									/>
 									)
 									: null
 								}
+
 							</tbody>
 						</table>
 					</div>

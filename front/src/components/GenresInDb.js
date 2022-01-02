@@ -50,7 +50,7 @@ class GenresInDb extends Component {
                 <div className="col-lg-6 mb-4">						
                     <div className="card shadow mb-4">
                         <div className="card-header py-3">
-                            <h6 onMouseOver={() => this.hanlderMouseOver} className="m-0 font-weight-bold text-gray-800">Genres in Data Base</h6>
+                            <h6 onMouseOver={() => this.hanlderMouseOver()} className="m-0 font-weight-bold text-gray-800">Genres in Data Base</h6>
                         </div>
                         <div className={this.state.bg ? "card-body bg-secondary" : "card-body"}>
                             <div className="row">
